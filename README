@@ -1,6 +1,16 @@
 # Previsão de Receita Nominal com Redes Neurais Artificiais
 
-Este projeto tem como objetivo avaliar a capacidade preditiva das técnicas de redes neurais artificiais na previsão da relação entre o volume de vendas e a receita nominal em setores de varejo. Utilizando dados de índice de receita nominal e volume de vendas do IBGE abrangendo etapas desde a obtenção e preparação dos dados até a construção e avaliação do modelo de rede neural.
+## Proposta do TCC
+
+Este projeto constitui o Trabalho de Conclusão de Curso (TCC) para o curso de Ciência de Dados na Universidade de São Paulo - Escola Superior de Agricultura "Luiz de Queiroz" (USP-ESALQ). A proposta é explorar a aplicação de técnicas avançadas de aprendizado de máquina, especificamente redes neurais artificiais (RNAs), para prever a receita nominal a partir do volume de vendas no setor varejista.
+
+## Objetivo
+
+O objetivo principal deste trabalho é desenvolver um modelo preditivo que possa eficientemente estimar a receita nominal baseando-se nos volumes de vendas do varejo. Ao fazer isso, procuramos:
+
+- Avaliar a precisão e a capacidade das redes neurais artificiais em modelar e prever relações complexas entre volume de vendas e receita nominal.
+- Contribuir para o campo da Ciência de Dados aplicada ao varejo com insights e metodologias que podem ser empregadas para melhorar a tomada de decisão e estratégias comerciais.
+- Oferecer uma ferramenta analítica que possa ser utilizada por profissionais e pesquisadores para explorar dados do setor varejista.
 
 ## Material e Métodos
 
