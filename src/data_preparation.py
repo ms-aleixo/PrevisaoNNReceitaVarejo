@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 
 def load_data(database_path):
+    # Carrega os dados sem filtrar por atividade_pcm_id
     conn = sqlite3.connect(database_path)
     query = """
     SELECT
@@ -21,6 +22,7 @@ def load_data(database_path):
     return df
 
 def prepare_data(df):
+    # Prepara os dados para treinamento
     df['receita_nominal'] = pd.to_numeric(df['receita_nominal'], errors='coerce')
     df['volume_vendas'] = pd.to_numeric(df['volume_vendas'], errors='coerce')
     imputer = SimpleImputer(strategy='median')
