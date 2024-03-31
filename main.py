@@ -1,9 +1,8 @@
 from src.data_preparation import load_data, prepare_data
-from src.model import build_model
+from src.model import build_model, plot_model_performance_with_linear_regression
 import src.optimization as optimization
 import optuna
 import os
-import matplotlib.pyplot as plt
 
 def run_and_evaluate_full_df(database_path, model_save_directory):
     # Carrega e prepara os dados
@@ -38,7 +37,10 @@ def run_and_evaluate_full_df(database_path, model_save_directory):
     final_model.save(model_save_path)
     print(f"Modelo salvo em {model_save_path}")
 
+    # Plota a performance do modelo com regressão linear
+    plot_model_performance_with_linear_regression(model_save_path, X_train, X_test, y_train, y_test)
+
 if __name__ == '__main__':
-    database_path = 'data/IBGE_tabela_8882.db'  # Caminho do arquivo de banco de dados
+    database_path = 'data/IBGE_tabela_8882.db'  # Ajuste o caminho conforme necessário
     model_save_directory = 'models/'  # Diretório para salvar o modelo treinado
     run_and_evaluate_full_df(database_path, model_save_directory)
