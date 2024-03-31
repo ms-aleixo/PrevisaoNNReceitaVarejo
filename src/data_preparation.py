@@ -1,5 +1,3 @@
-# src/data_preparation.py
-
 import pandas as pd
 import sqlite3
 from sklearn.model_selection import train_test_split
