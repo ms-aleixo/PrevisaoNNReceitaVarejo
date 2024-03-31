@@ -1,0 +1,7 @@
+optuna
+xlsxwriter
+pandas
+sqlite3
+tensorflow
+scikit-learn
+matplotlib
