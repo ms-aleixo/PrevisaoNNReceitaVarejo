@@ -1,0 +1,47 @@
+# Previsão de Receita Nominal com Redes Neurais Artificiais
+
+Este projeto tem como objetivo avaliar a capacidade preditiva das técnicas de redes neurais artificiais na previsão da relação entre o volume de vendas e a receita nominal em setores de varejo. Utilizando dados de índice de receita nominal e volume de vendas do IBGE abrangendo etapas desde a obtenção e preparação dos dados até a construção e avaliação do modelo de rede neural.
+
+## Material e Métodos
+
+A metodologia empregada neste projeto envolve as seguintes etapas principais:
+
+1. **Obtenção dos Dados**: Utilização da Pesquisa Mensal de Comércio (PMC) do IBGE, abrangendo índices de receita nominal e volume de vendas para diversas atividades varejistas e unidades da federação no Brasil.
+2. **Seleção, Limpeza e Normalização dos Dados**: Os dados foram filtrados, limpos e estruturados para garantir a qualidade e a compatibilidade com as ferramentas de análise.
+3. **Desenvolvimento do Modelo de Rede Neural**: Implementação de um modelo de perceptron multicamada (MLP) com o pacote Keras, utilizando técnicas como retropropagação para treinamento.
+4. **Otimização de Hiperparâmetros**: Uso do pacote Optuna para encontrar a melhor configuração de hiperparâmetros do modelo.
+5. **Avaliação do Modelo**: Utilização de métricas como erro absoluto médio (MAE) e erro quadrático médio (MSE) para avaliar o desempenho do modelo.
+
+## Tecnologias Utilizadas
+
+- Python
+- Pandas para manipulação de dados
+- SQLite para gestão de dados
+- Keras e TensorFlow para construção e treinamento do modelo de rede neural
+- Optuna para otimização de hiperparâmetros
+- Matplotlib para visualização de dados
+
+## Como Executar
+
+Para executar este projeto, siga os passos abaixo:
+
+1. Clone este repositório para sua máquina local.
+2. Instale as dependências necessárias utilizando o comando `pip install -r requirements.txt`.
+3. Navegue até o diretório do projeto e execute o script principal com o comando `python main.py`.
+
+## Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+
+- `data/`: Diretório para armazenar os datasets utilizados.
+- `models/`: Local onde os modelos treinados são salvos.
+- `src/`: Contém os scripts Python para carregamento e preparação de dados, construção e avaliação do modelo.
+- `main.py`: Script principal que executa o fluxo completo do projeto.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md para detalhes.
+
+## Referências
+
+- IBGE (2023). Pesquisa Mensal de Comércio (PMC).
