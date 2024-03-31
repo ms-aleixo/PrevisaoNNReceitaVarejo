@@ -5,6 +5,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 import os
 
 def build_model(input_shape, hyperparameters):
+    # Constrói o modelo de rede neural
     model = Sequential([
         Dense(units=hyperparameters['units'], activation=hyperparameters['activation'], input_shape=(input_shape,)),
         Dense(units=1, activation='linear')
